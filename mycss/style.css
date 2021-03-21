@@ -1,0 +1,48 @@
+li {
+    text-align: right;
+  }
+
+  .container {
+    float: center;
+
+  }
+
+  body {
+    color: #ffffff;
+    background-color: #000000;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    width: 1078px;
+  }
+
+  header {
+    color: #531f1f;
+    background-color: #2b3886;
+    ;
+    height: 100px;
+    position: relative;
+  }
+
+
+
+  footer {
+    color: #1b2125;
+    background-color: #849dcc;
+    height: 100px;
+    clear: both;
+  }
+
+
+  img {
+    width: 30px;
+    height: 30px;
+
+
+  }
+
+  #karuzela {
+    width: 100%;
+    height: 50%;
+
+  }
