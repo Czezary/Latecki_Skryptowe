@@ -2,7 +2,59 @@
     margin-left: auto;
 }
 
-body {
+.navbar-default   .nav   li   a   .glyphicon   {
+      color: #ff0000; } 
+
+li {
+    text-align: right;
+  }
+
+.btn-primary{
+    background-color: #1f5328;
+    outline: 0;
+}
+
+  .container {
+    float: center;
+
+  }
+
+  body {
+    color: #ffffff;
+    background-color: #16073f;
+    margin-left: 300px;
+    text-align: center;
+    display: block;
+    width: 1200px;
     font-size:18px; color:#ffffff; background:#000000; 
     font-family: 'New Tegomin', serif;
-} 
+
+  }
+
+  header {
+    color: #1f5328;
+    background-color: #862b33;
+    height: 100px;
+    position: relative;
+  }
+
+
+
+  footer {
+    color: #10054b;
+    background-color: #cc84c8;
+    height: 50px;
+    clear: both;
+  }
+
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #karuzela {
+    width: 100%;
+    height: 50%;
+
+  }
