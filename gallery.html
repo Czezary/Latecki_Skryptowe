@@ -24,15 +24,21 @@
           <h1>Panzerkampfwagen VI - best tank ever
           </h1>
           <p>
-            The Tiger I (About this soundlisten (help·info)), a German heavy tank of World War II,
-             operated from 1942 in Africa and in Operation Barbarossa, usually in independent heavy tank battalions. 
-             It was designated Panzerkampfwagen VI Ausf H during development but was changed to Panzerkampfwagen VI Ausf E during production. 
-             The Tiger I gave the German Army its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun (derived from the 8.8 cm Flak 36).
-              1,347 were built between August 1942 and August 1944.[10] After August 1944, production of the Tiger I was phased out in favour of the Tiger II. 
-            
           </p>
         </div>
       </section>
+
+      <section ng-controller="GalleryListCtrl" id="gallery">
+        <h1 ng-bind="title"></h1>
+        <p>ilosc zdjec: {{galleries.length}}</p>
+        <div class="row">
+          <div class="col-sm-4" ng-repeat="gallery in galleries">
+           <img src="{{gallery.thumbnailUrl}}">
+           <h3>{{gallery.title}}</h3>
+           <p><strong>Kiedy:</strong> {{gallery.when | date:'longDate'}}</p>
+           </div>
+          </div> 
+      </section>  
    
   
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -62,7 +68,7 @@
                    Sekcja chonkerow</a>
                   </li>
                 <li>
-                  <a href="gallery.html" title="link1" class="btn btn-primary"> 
+                  <a href="gallery.html" link1 class="btn btn-primary"> 
                   <i class="glyphicon glyphicon-envelope" style="color:red"></i>
                    Galeria</a>
                   </li>
@@ -76,39 +82,7 @@
           </div>
         </nav>
         <div class=”container”>
-          <div id="carouselID" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselID" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselID" data-slide-to="1"></li>
-              <li data-target="#carouselID" data-slide-to="2"></li>
-              <li data-target="#carouselID" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img id="karuzela" src=1.jpg alt=”obrazek”>
-                <div class="carousel-caption">ABSOLUTE UNIT</div>
-              </div>
-              <div class="item">
-                <img id="karuzela" src=2.jpg alt=”obrazek”>
-                <div class="carousel-caption">ABSOLUTE UNIT </div>
-              </div>
-              <div class="item">
-                <img id="karuzela" src=3.jpg alt=”obrazek”>
-                <div class="carousel-caption">ABSOLUTE UNIT</div>
-              </div>
-              <div class="item">
-                <img id="karuzela" src=4.jpg alt=”obrazek”>
-                <div class="carousel-caption">ABSOLUTE UNIT</div>
-              </div>
-              <a class="left carousel-control" href="#carouselID" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" ariahidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carouselID" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" ariahidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+          
   
           </div>
         </div>
@@ -135,15 +109,19 @@
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Zamknij</button>
                 </div>
               </div>
-              
             </div>
           </div>
       </div>
     </div>
+
+
+
+<script src="js/angular.min.js"></script>
 </body>>
 
-<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/controllers.js"></script>
 
 </html>
