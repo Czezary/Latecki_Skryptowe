@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h1").addClass("green");
+            $("h2").addClass("brown");
+            $("p").addClass("blue");
+            $("div").addClass("important");
+        });
+    });
+</script>
+<style>
+    .important {
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .brown {
+        color: brown;
+    }
+    .blue {
+        color: blue;
+    }
+    .green {
+        color: green;
+    }
+</style>
+</head>
+<body>
+    <h1>Nagłówek 1</h1>
+    <h2>Nagłówek 2</h2>
+    <p>Wiersz tesktu.</p>
+    <p>Kolejny wiersz tekstu.</p>
+    <div>To jest tekst specjalny, ani wiersz ani nagłówek</div><br>
+    <button>Modyfikuj</button>
+</body>
+</html>

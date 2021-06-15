@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").append("<br/>Dodatkowy element listy");
+        });
+    });
+</script>
+</head>
+<body>
+    <p>Uzupełnianie listy dodatkowym kontentem</p>
+    <ol>
+        <li>Element listy nr .1</li>
+        <li>Element listy nr .2</li>
+    </ol>
+    <button id="btn1">Dodaj do znacznika p</button>
+</body>
+</html>

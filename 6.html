@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Datepicker - Default functionality</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+$( "#tabs" ).tabs();
+$( "#datepicker" ).datepicker();
+$("#dialog").dialog({ autoOpen: false });
+$("li").click(function () {
+    $( "#dialog" ).dialog('close');
+});
+$("#test").click(function () {
+    $( "#dialog" ).dialog('open');
+});
+} );
+</script>
+    <style>
+        #tabs-3{
+            height: 800px;
+        }
+</style>
+</head>
+<body>
+<div id="tabs">
+<ul>
+<li><a href="#tabs-1">tab1</a></li>
+<li><a href="#tabs-2">tab2</a></li>
+<li id="test"><a href="#tabs-3">tab3</a></li>
+</ul>
+<div id="tabs-1">
+<p>ratatatatatataatyatatatatatatattatatatatatatattatatatatattatatatataattataatatatatattaatatattaatatatattatatatatatatatatataaatatataatt </p>
+</div>
+<div id="tabs-2">
+<p>ratatatatatatatattatatataatatatatatatatastatatatatatatatattatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatata</p>
+<p>Data: <input type="text" id="datepicker"></p>
+</div>
+<div id="tabs-3">
+<div id="dialog" title="Tekst">    
+<p>ratatatatatatatattatatataatatatatatatatastatatatatatatatattatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatata</p>
+</div>
+</div>
+</div>
+</body>
+</html>
